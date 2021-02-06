@@ -6,33 +6,73 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
-    <TextView
-        android:id="@+id/text_home"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+    <Button
+        android:id="@+id/HomeDailyTracker"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="8dp"
+        android:text="Daily Tracker"
+        app:layout_constraintBottom_toTopOf="@+id/HomeWeeklyTracker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HomeTitle" />
+
+    <Button
+        android:id="@+id/HomeWeeklyTracker"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="6dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="8dp"
+        android:text="Weekly Tracker"
+        app:layout_constraintBottom_toTopOf="@+id/HomeGetHelp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HomeDailyTracker" />
+
+    <Button
+        android:id="@+id/HomeGetHelp"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="8dp"
+        android:text="Get Help"
+        app:layout_constraintBottom_toTopOf="@+id/HomeActivityTracker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HomeWeeklyTracker" />
+
+    <TextView
+        android:id="@+id/HomeTitle"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginBottom="200dp"
+        android:text="UniMind"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/HomeDailyTracker"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="26dp"
-        android:layout_marginEnd="310dp"
-        android:layout_marginBottom="282dp"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/text_home"
+        android:id="@+id/HomeActivityTracker"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="6dp"
+        android:text="Activity Tracker"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/HomeGetHelp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
