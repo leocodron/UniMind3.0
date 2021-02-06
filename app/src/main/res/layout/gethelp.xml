@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/callSamaritans3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mind"
+        tools:layout_editor_absoluteX="306dp"
+        tools:layout_editor_absoluteY="179dp" />
+
+    <Button
+        android:id="@+id/callSamaritans4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NHS"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="179dp" />
+
+    <Button
+        android:id="@+id/callSamaritans5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text Mind"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="179dp" />
+
+    <Button
+        android:id="@+id/callSamaritans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call Samaritans"
+        tools:layout_editor_absoluteX="220dp"
+        tools:layout_editor_absoluteY="107dp" />
+
+    <Button
+        android:id="@+id/emailUniversityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="107dp" />
+
+    <TextView
+        android:id="@+id/getHelpTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Help"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="16dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

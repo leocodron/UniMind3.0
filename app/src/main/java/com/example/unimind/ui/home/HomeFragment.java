@@ -1,9 +1,11 @@
 package com.example.unimind.ui.home;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -13,10 +15,14 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.unimind.R;
+import com.example.unimind.ui.gethelp.GetHelp;
 
 public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
+    private Button getHelpButton;
+
+
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -30,6 +36,25 @@ public class HomeFragment extends Fragment {
                 textView.setText(s);
             }
         });
+
+
+        Button getHelpButton = (Button) findViewById(R.id.getHelpButton);
+
+        getHelpButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                moveToGetHelp();
+            }
+        });
+
         return root;
     }
+
+    public void moveToGetHelp() {
+        Intent getHelp = new Intent(HomeFragment.this, GetHelp.class);
+        startActivity(getHelp);
+    }
+
 }
