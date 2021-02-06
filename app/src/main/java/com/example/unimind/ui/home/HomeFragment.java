@@ -44,9 +44,10 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v)
             {
+                textView.setText("LOL");
+
                 System.out.println("test");
                 Log.d("Test","I am here");
-
                 moveToGetHelp();
 
             }
