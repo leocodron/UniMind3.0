@@ -1,20 +1,22 @@
 package com.example.unimind.ui.home;
 
+import android.view.Gravity;
+import android.widget.TextView;
+
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 public class HomeViewModel extends ViewModel {
 
-    private MutableLiveData<String> mText;
+    private TextView homeTitle;
 
     public HomeViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
+//        homeTitle = new TextView();
+//
     }
 
-    public LiveData<String> getText() {
-        return mText;
+    public TextView getText() {
+        return homeTitle;
     }
 }
-
