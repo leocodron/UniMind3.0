@@ -13,7 +13,7 @@ public class HomeViewModel extends ViewModel {
 
     public HomeViewModel() {
 //        homeTitle = new TextView();
-
+//
     }
 
     public TextView getText() {
